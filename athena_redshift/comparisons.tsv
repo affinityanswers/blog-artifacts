@@ -1,0 +1,5 @@
+Features/ Systems	AWS Athena	AWS Redshift
+Server Management	Serverless	Need to choose the Nodes in the cluster
+Price	$5 for 1 TB of data scanned	Pay for the nodes in use + $5 per TB of data scanned in AWS S3 if using redshift spectrum
+Execution Speed	Sometimes a lot faster than Redshift as AWS automatically chooses the instances for the Job	If optimised correctly, should be a lot faster because of Keys and local disk.
+Suitable for	Data is only in AWS S3 and less frequent querying of data.  Suitable for use cases where data is not being updated, only inserted. Ex: storing log files, read only time series data	Data is in AWS S3, Redshift or any other database system supported by federation.
